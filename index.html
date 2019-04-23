@@ -1,18 +1,136 @@
 ---
 layout: default
 ---
+                    
+<div class="section" id="production">
+				<div class="layout2">
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+					<div class="h1">Вы найдете в нашем магазине</div>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+					<div class="catalog">
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+						<figure>
+							<figcaption>Павлопосадские платки</figcaption>					
+							<img src="images/catalog/platky.jpg" alt="Павлопосадские платки">
+						</figure>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+						<figure>
+							<figcaption>Павлопосадские платки</figcaption>					
+							<img src="images/catalog/platky.jpg" alt="Павлопосадские платки">
+						</figure>
+
+						<figure>
+							<figcaption>Павлопосадские платки</figcaption>					
+							<img src="images/catalog/platky.jpg" alt="Павлопосадские платки">
+						</figure>
+
+						<figure>
+							<figcaption>Павлопосадские платки</figcaption>					
+							<img src="images/catalog/platky.jpg" alt="Павлопосадские платки">
+						</figure>
+
+						<figure>
+							<figcaption>Павлопосадские платки</figcaption>					
+							<img src="images/catalog/platky.jpg" alt="Павлопосадские платки">
+						</figure>
+
+
+						<figure>
+							<figcaption>Павлопосадские платки</figcaption>					
+							<img src="images/catalog/platky.jpg" alt="Павлопосадские платки">
+						</figure>
+
+						<figure>
+							<figcaption>Павлопосадские платки</figcaption>					
+							<img src="images/catalog/platky.jpg" alt="Павлопосадские платки">
+						</figure>
+
+						<figure>
+							<figcaption>Павлопосадские платки</figcaption>					
+							<img src="images/catalog/platky.jpg" alt="Павлопосадские платки">
+						</figure>
+
+						<figure>
+							<figcaption>Павлопосадские платки</figcaption>					
+							<img src="images/catalog/platky.jpg" alt="Павлопосадские платки">
+						</figure>
+
+						<figure>
+							<figcaption>Павлопосадские платки</figcaption>					
+							<img src="images/catalog/platky.jpg" alt="Павлопосадские платки">
+						</figure>													
+
+					</div><!-- .catalog --> 
+
+				</div><!-- .layout -->
+			</div><!-- #production -->
+
+                
+			<div class="section" id="contact">
+				<div class="layout">
+
+					<div class="h1">Как нас найти</div>
+
+					<div class="mode-box">
+					  <dl>
+					    <dt>Адрес магазина: </dt>
+					    <dd>{{ site.address }}, магазин <strong>“Тамбовский Арбат”</strong></dd>
+					  </dl>
+					  <dl>
+					    <dt>Режим работы:</dt>
+					    <dd>10&nbsp;-&nbsp;17&nbsp;(пн) / 09&nbsp;-&nbsp;18&nbsp;(вт&nbsp;-&nbsp;пт) / 09&nbsp;-&nbsp;17&nbsp;(сб&nbsp;-&nbsp;вс)</dd>
+					  </dl>
+					  <dl>
+					    <dt>Телефон для связи:</dt>
+					    <dd>{{ site.phone }}</dd>
+					  </dl>
+					</div><!-- .mode-box -->
+
+					<div class="store-image">
+					    <img src="images/store.jpg" alt="Место нахождения">
+					</div>
+				    
+				</div><!-- .layout -->
+			  
+			</div><!-- #contact -->
+
+			<div id="map"></div>
+             
+                <script>
+                function initMap() {
+                  // Create a map object and specify the DOM element for display.
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                      center: {lat: 52.72275, lng: 41.44972},
+                      scrollwheel: false,
+                      zoom: 17
+                  });
+                  
+                  var marker = new google.maps.Marker({
+                      map: map,
+                      // Define the place with a location, and a query string.
+                      place: {
+                          location: {lat: 52.72275, lng: 41.44972},
+                          query: 'Тамбов, Ткани Арбат'
+      
+                      },
+                      // Attributions help users find your site again.
+                      attribution: {
+                          source: 'Google Maps JavaScript API',
+                          webUrl: 'https://developers.google.com/maps/'
+                      }
+                  });
+      
+                  // Construct a new InfoWindow.
+                  var infoWindow = new google.maps.InfoWindow({
+                      content: 'Тамбов, Ткани Арбат'
+                  });
+      
+                  // Opens the InfoWindow when marker is clicked.
+                  marker.addListener('click', function() {
+                      infoWindow.open(map, marker);
+                  });
+                }
+              </script>
+              <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSVD-XO6yqotxaw86X60AGkzdsNYYIN94&callback=initMap" async defer></script>
+                
 </div>

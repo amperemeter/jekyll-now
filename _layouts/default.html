@@ -15,37 +15,61 @@
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
-  <body>
-    <div class="wrapper-masthead">
+  <body class="home">
+
+    <div class="wrapper">
       <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+                
+        <header>
+          <div class="layout">
+              
+			<div class="site-info">
+				<h1 class="site-name"><a href="{{ site.baseurl }}/" title="{{ site.name }}">{{ site.name }}</a></h1>
+				<p class="site-description">{{ site.description }}</p>
+            </div><!-- .site-info --> 
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
+            <div class="mode-box">
+              <dl>
+                <dt>Мы находимся:</dt>
+                <dd>в магазине <strong>“Тамбовский Арбат”</strong></dd>
+              </dl>
+              <dl>
+                <dt>По адресу:</dt>
+                <dd>{{ site.address }}</dd>
+              </dl>
+              <dl>
+                <dt>Режим работы:</dt>
+                <dd>10&nbsp;-&nbsp;17&nbsp;(понед.)<br>09&nbsp;-&nbsp;18&nbsp;(вт&nbsp;-&nbsp;пт)<br>09&nbsp;-&nbsp;17&nbsp;(сб&nbsp;-&nbsp;вс)</dd>
+              </dl>
+            </div><!-- .mode-box -->
+            
+          </div><!-- .layout -->
         </header>
-      </div>
-    </div>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+		<div id="main" role="main" class="container">
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
+			{{ content }}
+
+		</div>              
+        
+          
+        <footer>
+          <div class="layout">
+            <div class="copyright"><a href="{{ site.baseurl }}/" title="{{ site.name }}">© {{ site.name }}, {{ 'now' | date: "%Y" }}</a></div>
+            
+            <div class="reviews">Оставить отзыв:
+              <a href="https://tambov.flamp.ru/firm/magazin_tkanejj-70000001007453691" target="_blank"><img src="images/flamp.png" alt="Flamp"></a>
+            </div>
+            
+            <div class="developer"><a href="https://vk.com/dashadesigner" target="_blank">Разработка</a></div>
+          </div><!-- .layout -->
         </footer>
-      </div>
-    </div>
 
-    {% include analytics.html %}
+        {% include analytics.html %}
+      
+      </div><!-- .container -->
+    </div><!-- .wrapper -->
+    
+    
   </body>
 </html>
