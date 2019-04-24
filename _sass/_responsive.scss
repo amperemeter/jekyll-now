@@ -1,17 +1,6 @@
-@media (max-width: 1540px) {
+@media (max-width: 1540px) {.catalog figure {width: 25%}}
 
-	.catalog figure {width: 25%}
-
-}
-
-
-
-
-@media (max-width: 1160px) {
-
-	.catalog figure {width: 33.3333%}
-
-}
+@media (max-width: 1160px) {.catalog figure {width: 33.3333%}}
 
 
 
@@ -19,14 +8,15 @@
 @media (max-width: 960px) {
 
 	#contact {
-
 		.mode-box, .store-image {width: 100%}
 		.mode-box {
 			padding-right: 0;
 			text-align: center;
 		}
-	  	.store-image img {margin: 40px auto ;} 
+	  	.store-image img {margin: 40px auto 0;} 
 	}	
+
+	.catalog figure {width: 50%}		
 
 }
 
@@ -48,39 +38,76 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
 
-	header .layout {padding-bottom: 50px;}
-	.catalog figure {width: 50%}	
+	header {
+		.site-name {font-size: 36px;}
+		.site-description {font-size: 16px;}
+		.layout {
+			padding-top: 25px;
+    		padding-bottom: 25px;
+    	}
+	}	
 
+	#production, #contact {
+		padding-top: 45px;
+	    padding-bottom: 50px;
+	    .h1 {
+	    	padding-bottom: 25px; 
+	    	font-size: 24px;
+	    }
+	}	
+	#contact {
+		.store-image img {margin: 30px auto 0;} 
+	}
+	.mode-box dl {
+	    padding: 10px 0;
+	    line-height: 1.5em;		
+		dt {font-size: 20px;}
+		dd {font-size: inherit;}
+	}
+
+	#map {height: 400px;}	
 }
 
 
 
 
 @media (max-width: 540px) {
-
-	header .site-name {font-size: 36px;}
-	.h1 {font-size: 24px;}
-	.catalog figure {width: 100%}		
+	.catalog figure {
+		width: 100%;
+   		padding: 0;
+   				
+		img {display: none;}
+	}
+	.layout, .layout2 {
+		padding-right: 10px;
+		padding-left: 10px;
+	} 	
 
 }
 
 
 
 
-@media (max-width: 480px) {}
+@media (max-width: 400px)  {
 
+	header {
+		.site-name {font-size: 24px;}
+	}
 
+	#production, #contact {
+		padding-top: 30px;
+	    padding-bottom: 35px;
 
+	    .h1 {
+	    	padding-bottom: 15px; 
+	    	font-size: 20px;
+	    }
+	}
 
-@media (max-width: 320px)  {
-
-  header .site-name {font-size: 24px;}
-  .h1 {font-size: 20px;}
-  .layout {padding: 0 10px;}
-  .mode-box dl dt {font-size: 20px;}
-  .mode-box dl dd {font-size: 18px;}
-  #map {height: 400px;}
+	#contact {
+		.store-image img {margin: 20px auto 0;} 
+	}	
 
 }

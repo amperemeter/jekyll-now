@@ -13,7 +13,23 @@
 /* BASE RULES */
 /**************/
 
-@import "http://fonts.fontstorage.com/import/raleway.css";
+@font-face {
+  font-family: Raleway;
+  font-weight: 300;
+  font-style: normal;
+  src: url(fonts/RalewayRegular.eot);src:url(/fonts/RalewayRegular/RalewayRegular.eot?#iefix) format("embedded-opentype"),
+       url(fonts/RalewayRegular.woff) format("woff"),
+       url(fonts/RalewayRegular.ttf) format("truetype")
+}
+
+@font-face {
+  font-family: Raleway;
+  font-weight: 700;
+  font-style: normal;
+  src: url(fonts/RalewayBold.eot);src:url(/fonts/RalewayBold/RalewayBold.eot?#iefix) format("embedded-opentype"),
+       url(fonts/RalewayBold.woff) format("woff"),
+       url(fonts/RalewayBold.ttf) format("truetype")
+}
 
 html {
   font-size: 100%;
@@ -223,6 +239,7 @@ nav {
 /*---------- header ----------*/
 header {
   background: url(images/banner.jpg) center top;
+  background-size: cover;
 
   .layout {
     padding-top: 40px;
@@ -270,12 +287,15 @@ header {
   margin-right: -10px;  
 
   figure {
-    width: 20%;
+    width: 16.6666%;
     padding: 10px;
     img {width: 100%;}
     figcaption {
       text-align: center;
       padding-bottom: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 }
@@ -285,6 +305,7 @@ header {
 /*---------- contact ----------*/
 #contact {
   background: url(images/contact-banner.jpg) center top;
+  background-size: cover;  
   padding-top: 50px;
   padding-bottom: 50px;
   position: relative;
@@ -332,6 +353,7 @@ header {
 footer {
   width: 100%;
   background: url(images/footer.jpg) center top;
+  background-size: cover;
   padding: 25px 0 20px;
 
   a {
