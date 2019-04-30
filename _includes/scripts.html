@@ -1,9 +1,17 @@
-			<script src="{{ site.baseurl }}/js/uitop/jquery.ui.totop.min.js"></script>
-			<script src="{{ site.baseurl }}/js/uitop/easing.js"></script> 
-			<script>
-			 $(document).ready(function() {
-			    $().UItoTop({ easingType: 'easeOutQuart' });
+<script src="{{ site.baseurl }}/js/uitop/jquery.ui.totop.min.js"></script>
+		<script src="{{ site.baseurl }}/js/uitop/easing.js"></script> 
 
-		    	$(window).enllax();
-		    });
-		    </script>	
+		<script>
+		 $(document).ready(function() {
+
+		 	//button up
+		    $().UItoTop({ easingType: 'easeOutQuart' });
+
+			//paralax
+	    	//$(window).enllax();
+
+	    	//magnific popup
+			$('.mgf-contact').magnificPopup({type:'image'});
+
+	    });
+	    </script>	

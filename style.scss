@@ -251,7 +251,7 @@ nav {
 
 /*---------- header ----------*/
 header {
-  background: url(images/banner.jpg) center top;
+  background: url(images/backgrounds/banner.jpg) center top;
   background-size: cover;
 
   .layout {
@@ -282,6 +282,13 @@ header {
   
   dt {font-size: 24px;}
   dd {font-size: 20px;}
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+  &:hover, &:focus, &:active {text-decoration: underline;}
+  }
 }
 
 
@@ -314,7 +321,7 @@ header {
 }
 
 #shawl {  
-  background: url(images/IMG_4023.jpg);
+  background: url(images/backgrounds/shawl-banner.jpg);
   //background-size: cover; 
   position: relative;
   height: 600px;
@@ -371,7 +378,7 @@ header {
 /*---------- footer ----------*/
 footer {
   width: 100%;
-  background: url(images/footer.jpg) center top;
+  background: url(images/backgrounds/footer.jpg) center top;
   background-size: cover;
   padding: 25px 0 20px;
 
@@ -446,16 +453,26 @@ footer {
 body.error {
   background-color: white;
   color: $darkerGray;
-  display: table;
-  margin-top: 50px;
+
+  a {display: inline-block;}
+  img {margin: 0 auto;}
 }
 body.error .wrapper {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center; 
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  display: table;
+
+  .content {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle; 
+  }
 }
-body.error a {display: inline-block;}
-body.error img {margin: 0 auto;}
 
 
 
