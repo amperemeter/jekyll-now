@@ -308,6 +308,7 @@ header {
 
     img {
       width: 100%;
+      z-index: 1000;
       transition: all 0.2s ease-in-out;
       &:hover {transform: scale(1.02);}
     }
