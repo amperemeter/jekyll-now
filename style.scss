@@ -17,18 +17,18 @@
   font-family: Raleway;
   font-weight: 300;
   font-style: normal;
-  src: url(fonts/RalewayRegular.eot);src:url(/fonts/RalewayRegular/RalewayRegular.eot?#iefix) format("embedded-opentype"),
-       url(fonts/RalewayRegular.woff) format("woff"),
-       url(fonts/RalewayRegular.ttf) format("truetype")
+  src: url(/fonts/RalewayRegular.eot);src:url(/fonts/RalewayRegular/RalewayRegular.eot?#iefix) format("embedded-opentype"),
+       url(/fonts/RalewayRegular.woff) format("woff"),
+       url(/fonts/RalewayRegular.ttf) format("truetype")
 }
 
 @font-face {
   font-family: Raleway;
   font-weight: 700;
   font-style: normal;
-  src: url(fonts/RalewayBold.eot);src:url(/fonts/RalewayBold/RalewayBold.eot?#iefix) format("embedded-opentype"),
-       url(fonts/RalewayBold.woff) format("woff"),
-       url(fonts/RalewayBold.ttf) format("truetype")
+  src: url(/fonts/RalewayBold.eot);src:url(/fonts/RalewayBold/RalewayBold.eot?#iefix) format("embedded-opentype"),
+       url(/fonts/RalewayBold.woff) format("woff"),
+       url(/fonts/RalewayBold.ttf) format("truetype")
 }
 
 html {
@@ -37,7 +37,7 @@ html {
 }
 
 body {
-	background: #0b0b0b;
+  background: #0b0b0b;
   font: 18px $raleway;
   color: $white;
   width: 100%;
@@ -251,7 +251,7 @@ nav {
 
 /*---------- header ----------*/
 header {
-  background: url(images/backgrounds/banner.jpg) center top;
+  background: url(/images/backgrounds/banner.jpg) center top;
   background-size: cover;
   background-attachment: fixed;
 
@@ -325,7 +325,7 @@ header {
 }
 
 #shawl {  
-  background: url(images/backgrounds/shawl-banner.jpg);
+  background: url(/images/backgrounds/shawl-banner.jpg);
   background-attachment: fixed;
   background-size: cover; 
   position: relative;
@@ -384,7 +384,7 @@ header {
 /*---------- footer ----------*/
 footer {
   width: 100%;
-  background: url(images/backgrounds/footer.jpg) center top;
+  background: url(/images/backgrounds/footer.jpg) center top;
   background-size: cover;
   padding: 25px 0 20px;
 
@@ -434,12 +434,12 @@ footer {
   height: 50px;
   border: none;
   text-indent: 100%;
-  background: url(js/uitop/uitop.png) no-repeat left top;
+  background: url(/js/uitop/uitop.png) no-repeat left top;
   z-index: 1000;
 }
 
 #toTopHover {
-  background: url(js/uitop/uitop.png) no-repeat left -50px;
+  background: url(/js/uitop/uitop.png) no-repeat left -50px;
   width: 50px;
   height: 50px;
   display: block;
