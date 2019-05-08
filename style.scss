@@ -253,6 +253,7 @@ nav {
 header {
   background: url(images/backgrounds/banner.jpg) center top;
   background-size: cover;
+  background-attachment: fixed;
 
   .layout {
     padding-top: 40px;
