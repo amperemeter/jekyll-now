@@ -306,12 +306,12 @@ header {
   figure {
     width: 16.6666%;
     padding: 10px;
+    transition: all 0.2s ease-in-out;
+    &:hover {transform: scale(1.02);}    
 
     img {
       width: 100%;
       z-index: 1000;
-      transition: all 0.2s ease-in-out;
-      &:hover {transform: scale(1.02);}
     }
 
     figcaption {
