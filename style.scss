@@ -14,142 +14,107 @@
 /**************/
 
 @font-face {
-  font-family: Raleway;
-  font-weight: 300;
-  font-style: normal;
-  src: url(/fonts/RalewayRegular.eot);src:url(/fonts/RalewayRegular/RalewayRegular.eot?#iefix) format("embedded-opentype"),
-       url(/fonts/RalewayRegular.woff) format("woff"),
-       url(/fonts/RalewayRegular.ttf) format("truetype")
+	font-family: Raleway;
+	font-weight: 300;
+	font-style: normal;
+	src: url(/fonts/RalewayRegular.eot);src:url(/fonts/RalewayRegular/RalewayRegular.eot?#iefix) format("embedded-opentype"),
+		url(/fonts/RalewayRegular.woff) format("woff"),
+		url(/fonts/RalewayRegular.ttf) format("truetype")
 }
 
 @font-face {
-  font-family: Raleway;
-  font-weight: 700;
-  font-style: normal;
-  src: url(/fonts/RalewayBold.eot);src:url(/fonts/RalewayBold/RalewayBold.eot?#iefix) format("embedded-opentype"),
-       url(/fonts/RalewayBold.woff) format("woff"),
-       url(/fonts/RalewayBold.ttf) format("truetype")
+	font-family: Raleway;
+	font-weight: 700;
+	font-style: normal;
+	src: url(/fonts/RalewayBold.eot);src:url(/fonts/RalewayBold/RalewayBold.eot?#iefix) format("embedded-opentype"),
+		url(/fonts/RalewayBold.woff) format("woff"),
+		url(/fonts/RalewayBold.ttf) format("truetype")
 }
 
 html {
-  font-size: 100%;
-  min-width: 300px;
+	font-size: 100%;
+	min-width: 300px;
 }
 
 body {
-  background: #0b0b0b;
-  font: 18px $raleway;
-  color: $white;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  overflow-x: hidden;
+	background: #0b0b0b;
+	font: 18px $raleway;
+	color: $white;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, 
 acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, 
 sub, sup, tt, var, dl, dt, dd, fieldset, form, label, legend, figcaption, figure, table, caption, 
 tbody, tfoot, thead, tr, th, td {
-  //font-family: inherit;
-  //font-size: 100%;
-  //font-weight: inherit;
-  border: 0;
-  margin: 0;
-  outline: 0;
-  padding: 0;
-  vertical-align: baseline;
+	border: 0;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $white;
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
+	color: $white;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
 
-  @include mobile {
-    line-height: 1.4;
+	@include mobile {
+		line-height: 1.4;
   }
 }
 
-h1 {
-  font-size: 30px;  
-}
-
-h2 {
-  font-size: 24px;
-}
-
-h3 {
-  font-size: 20px;
-}
+h1 {font-size: 30px;}
+h2 {font-size: 24px;}
+h3 {font-size: 20px;}
 
 h4 {
-  font-size: 18px;
-  color: $gray;
+	font-size: 18px;
+	color: $gray;
 }
-
-p {
-  margin: 15px 0;
-}
-
-a {color: #ec2727;
-  &:hover {
-  text-decoration: none;
-  }
+a {
+	color: #ec2727;
+	&:hover {text-decoration: none;}
 }
 
 ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
+	margin: 15px 0;
+ 	padding-left: 30px;
 }
 
-ul {
-  list-style-type: disc;
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-ol ul, ul ol, ul ul, ol ol {
-  margin: 0;
-}
-
-ul ul, ol ul {
-  list-style-type: circle;
-}
-
-em, i {
-  font-style: italic;
-}
-
-strong, b {
-  font-weight: bold;
-}
+ul {list-style-type: disc;}
+ol {list-style-type: decimal;}
+ol ul, ul ol, ul ul, ol ol {margin: 0;}
+ul ul, ol ul {list-style-type: circle;}
+p {margin: 15px 0;}
+em, i {font-style: italic;}
+strong, b {font-weight: bold;}
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 // Fixes images in popup boxes from Google Translate
-.gmnoprint img {
-  max-width: none;
-}
+.gmnoprint img {max-width: none;}
 
 .date {
-  font-style: italic;
-  color: $gray;
+	font-style: italic;
+	color: $gray;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
-  background: $lightGray;
+	color: $black;
+	background: $lightGray;
 }
 ::selection {
-  color: $black;
-  background: $lightGray;
+	color: $black;
+	background: $lightGray;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -159,58 +124,53 @@ img {
     content: " ";
     display: table;
 }
-
-.clearfix:after {
-    clear: both;
-}
+.clearfix:after {clear: both;}
 
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
 
 .site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
+	float: left;
+	width: 70px;
+	height: 70px;
+	margin-right: 15px;
 
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
+	@include mobile {
+		float: none;
+    	display: block;
+    	margin: 0 auto;
   }
 
-  img {
-    border-radius: 5px;
-  }
+  img {border-radius: 5px;}
 }
 
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
+	float: right;
+	margin-top: 23px; // @TODO: Vertically middle align
+	font-family: $helveticaNeue;
+	font-size: 18px;
 
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
+	@include mobile {
+		float: none;
+		margin-top: 9px;
+		display: block;
+		font-size: 16px;
+	}
 
-  a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+	a {
+		margin-left: 20px;
+		color: $darkGray;
+		text-align: right;
+		font-weight: 300;
+		letter-spacing: 1px;
 
-    @include mobile {
-      margin: 0 10px;
-      color: $blue;
-    }
-  }
+		@include mobile {
+			margin: 0 10px;
+			color: $blue;
+		}
+	}
 }
 
 
@@ -219,31 +179,33 @@ nav {
 
 /*---------- layouts ----------*/
 .layout, .layout2 {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-  position: relative;  
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+	position: relative;  
 }
 .layout {max-width: 1240px;}
 
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 
-  .header {
-    text-align: center; 
-    padding-bottom: 45px;
-  }
-  .h1 {
-    font-size: 36px;
-    font-weight: 700;     
-  }
-  .discription {
-    font-size: 20px;
-    padding-top: 25px;
-    strong {color: #ffdb4a;}
-  }
+	.header {
+		text-align: center; 
+		padding-bottom: 45px;
+	}
+
+	.h1 {
+		font-size: 36px;
+		font-weight: 700;     
+	}
+
+	.discription {
+		font-size: 20px;
+		padding-top: 25px;
+		strong {color: #ffdb4a;}
+	}
 }
 
 
@@ -251,45 +213,45 @@ nav {
 
 /*---------- header ----------*/
 header {
-  background: url(/images/backgrounds/banner.jpg) center top;
-  background-size: cover;
-  background-attachment: fixed;
+	background: url(/images/backgrounds/banner.jpg) center top;
+	background-size: cover;
+	background-attachment: fixed;
 
-  .layout {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: center;
-  }
-  .site-name {font-size: 56px;
-    a {
-      text-decoration: none;
-      color: inherit;
-      &:hover, &:active, &:focus {
-        color: inherit;
-        opacity: .8;
-      }
-    }
-  }
+	.layout {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		text-align: center;
+	}
+	.site-name {font-size: 56px;
+		a {
+			text-decoration: none;
+			color: inherit;
 
-  .site-description {
-    margin-top: 10px;
-    margin-bottom: 25px;
-  }
+			&:hover, &:active, &:focus {
+				color: inherit;
+				opacity: .8;
+			}
+		}
+	}
+
+	.site-description {
+		margin-top: 10px;
+		margin-bottom: 25px;
+	}
 }
 
 .mode-box dl {
-  padding: 14px 0;
-  line-height: 1.8em;
-  
-  dt {font-size: 24px;}
-  dd {font-size: 20px;}
+	padding: 14px 0;
+	line-height: 1.8em;
 
-  a {
-    color: inherit;
-    text-decoration: none;
+	dt {font-size: 24px;}
+	dd {font-size: 20px;}
 
-  &:hover, &:focus, &:active {text-decoration: underline;}
-  }
+	a {
+		color: inherit;
+		text-decoration: none;
+		&:hover, &:focus, &:active {text-decoration: underline;}
+	}
 }
 
 
@@ -297,84 +259,86 @@ header {
 
 /*---------- production ----------*/
 .catalog {  
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: -10px;
-  margin-right: -10px;  
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-left: -10px;
+	margin-right: -10px;  
 
-  figure {
-    width: 16.6666%;
-    padding: 10px;
-    &:hover {transform: scale(1.05);}    
+	figure {
+	width: 16.6666%;
+	padding: 10px;  
 
-    img {
-      width: 100%;
-      z-index: 1000;
-    }
+	div {
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			transition: all 0.3s ease-in-out;
+			&:hover {transform: scale(1.2);} 
+	    }
+    } 
 
     figcaption {
-      text-align: center;
-      padding-bottom: 10px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+		text-align: center;
+		padding-bottom: 10px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
     }
   }
 }
 
 #shawl {  
-  background: url(/images/backgrounds/shawl-banner.jpg);
-  background-attachment: fixed;
-  background-size: cover; 
-  position: relative;
-  height: 500px;
-  display: table;
-  width: 100%;
+	background: url(/images/backgrounds/shawl-banner.jpg);
+	background-attachment: fixed;
+	background-size: cover; 
+	position: relative;
+	height: 500px;
+	display: table;
+	width: 100%;
 
-  &:before {
-    background: rgba(#3a0e00,.5);
-    display: block;
-    content: "";
-    position: absolute;
-    top: 0;  
-    left: 0px;      
-    width: 100%;
-    height: 100%;
-  }
-  .layout {
-    display: table-cell;
-    vertical-align: middle;   
-  }
-  .header {padding-bottom: 0;}
+	&:before {
+		background: rgba(#3a0e00,.5);
+		display: block;
+		content: "";
+		position: absolute;
+		top: 0;  
+		left: 0px;      
+		width: 100%;
+		height: 100%;
+	}
+	.layout {
+		display: table-cell;
+		vertical-align: middle;   
+	}
+	.header {padding-bottom: 0;}
 }
 
 
 
 /*---------- contact ----------*/
 #contact {
-  .mode-box, .store-image {
-    width: 49.5%;
-    display: inline-block;
-    vertical-align: middle;
-    box-sizing: inherit;
-  }
-
-  .mode-box {
-    padding-right: 20px;
-  }
-
-  .store-image img {border: 10px solid white;} 
+	.mode-box, .store-image {
+		width: 49.5%;
+		display: inline-block;
+		vertical-align: middle;
+		box-sizing: inherit;
+	}
+	.mode-box {
+		padding-right: 20px;
+	}
+	.store-image img {border: 10px solid white;} 
 }
 
 #map {
-  color: $darkerGray;
-  height: 500px;
-  z-index: 1;
-  border: {
-    top: 15px solid white;
-    bottom: 15px solid white;
-  }
+	color: $darkerGray;
+	height: 500px;
+	z-index: 1;	
+	border: {
+		top: 15px solid white;
+		bottom: 15px solid white;
+	}
 }
 
 
@@ -382,40 +346,38 @@ header {
 
 /*---------- footer ----------*/
 footer {
-  width: 100%;
-  background: url(/images/backgrounds/footer.jpg) center top;
-  background-size: cover;
-  padding: 25px 0 20px;
+	width: 100%;
+	background: url(/images/backgrounds/footer.jpg) center top;
+	background-size: cover;
+	padding: 25px 0 20px;
 
-  a {
-    color: $white;
-    text-decoration: none;
+	a {
+		color: $white;
+		text-decoration: none;
+		&:hover, &:active, &:focus {text-decoration: underline;}
+	}
 
-    &:hover, &:active, &:focus {
-      text-decoration: underline;
-    }
-  }
+	.copyright, .developer, .reviews {
+		display: inline-block;
+		width: 33%;
+		vertical-align: top;
+	}
+	.reviews {
+		text-align: center;
+		img {
+			display: inline-block;
+			vertical-align: top;      
+			height: 40px;
+			margin: -6px 5px 0;
+			border-radius: 50%;      
 
-  .copyright, .developer, .reviews {
-    display: inline-block;
-    width: 33%;
-    vertical-align: top;
-  }
-  .reviews {text-align: center;
-    img {
-      display: inline-block;
-      vertical-align: top;      
-      height: 40px;
-      margin: -6px 5px 0;
-      border-radius: 50%;      
-
-      &:hover {
-        border: 2px solid #fff;
-        box-sizing: border-box;  
-      }
-    }
-  } 
-  .developer {text-align: right;}
+			&:hover {
+				border: 2px solid #fff;
+				box-sizing: border-box;  
+			}
+		}
+	} 
+	.developer {text-align: right;}
 }
 
 
@@ -423,30 +385,30 @@ footer {
 
 /*---------- toTop ----------*/
 #toTop {
-  display: none;
-  text-decoration: none;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  overflow: hidden;
-  width: 50px;
-  height: 50px;
-  border: none;
-  text-indent: 100%;
-  background: url(/js/uitop/uitop.png) no-repeat left top;
-  z-index: 1000;
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	overflow: hidden;
+	width: 50px;
+	height: 50px;
+	border: none;
+	text-indent: 100%;
+	background: url(/js/uitop/uitop.png) no-repeat left top;
+	z-index: 1000;
 }
 
 #toTopHover {
-  background: url(/js/uitop/uitop.png) no-repeat left -50px;
-  width: 50px;
-  height: 50px;
-  display: block;
-  overflow: hidden;
-  float: left;
-  opacity: 0;
-  -moz-opacity: 0;
-  filter:alpha(opacity=0);
+	background: url(/js/uitop/uitop.png) no-repeat left -50px;
+	width: 50px;
+	height: 50px;
+	display: block;
+	overflow: hidden;
+	float: left;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
 }
 
 #toTop:active, #toTop:focus {outline:none;}
@@ -456,27 +418,28 @@ footer {
 
 /*---------- 404 ----------*/
 body.error {
-  background-color: white;
-  color: $darkerGray;
+	background-color: white;
+	color: $darkerGray;
 
-  a {display: inline-block;}
-  img {margin: 0 auto;}
+	a {display: inline-block;}
+	img {margin: 0 auto;}
 }
-body.error .wrapper {
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  padding: 20px;
-  display: table;
 
-  .content {
-    position: relative;
-    display: table-cell;
-    vertical-align: middle; 
-  }
+body.error .wrapper {
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	padding: 20px;
+	display: table;
+
+	.content {
+		position: relative;
+		display: table-cell;
+		vertical-align: middle; 
+	}
 }
 
 
