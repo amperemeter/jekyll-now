@@ -1,8 +1,29 @@
 <script src="{{ site.baseurl }}/js/uitop/jquery.ui.totop.min.js"></script>
 		<script src="{{ site.baseurl }}/js/uitop/easing.js"></script> 
+		<script src="{{ site.baseurl }}/js/animate/wow.min.js"></script>	 	
 
 		<script>
 		 $(document).ready(function() {
+
+		 	new WOW().init();
+
+			//const element =  document.querySelector('#contact')
+			//element.classList.add('wow', 'zoomInUp')
+
+			function animateCSS(element, animationName, callback) {
+			    const node = document.querySelector(element)
+			    node.classList.add('wow', animationName)		
+			}
+
+			animateCSS('header .site-name', 'rollIn')	
+			animateCSS('header .site-description', 'slideInRight')	
+			animateCSS('header .mode-box', 'slideInLeft')	
+		 	animateCSS('#production .h1', 'rollIn')										
+		 	animateCSS('#shawl .h1', 'rollIn')
+		 	animateCSS('#shawl .discription', 'slideInRight')		 	
+		 	animateCSS('#contact .h1', 'rollIn')
+		 	animateCSS('#contact .mode-box', 'slideInLeft')
+		 	animateCSS('#contact img', 'slideInRight')		 			 		 	
 
 		 	//button up
 		    $().UItoTop({ easingType: 'easeOutQuart' });
@@ -11,7 +32,7 @@
 	    	//$(window).enllax();
 
 	    	//magnific popup
-			$('.mgf-contact').magnificPopup({type:'image'});
+			$('.mgf-contact').magnificPopup({type:'image'});		
 
 	    });
-	    </script>	
+	    </script>		    

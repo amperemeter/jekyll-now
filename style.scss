@@ -213,6 +213,7 @@ nav {
 
 /*---------- header ----------*/
 header {
+	animation-delay: 1s;
 	background: url(/images/backgrounds/banner.jpg) center top;
 	background-size: cover;
 	background-attachment: fixed;
@@ -290,7 +291,7 @@ header {
 }
 
 #shawl {  
-	background: url(/images/backgrounds/shawl-banner.jpg);
+	background: url(/images/backgrounds/shawl-banner.jpg) center;
 	background-attachment: fixed;
 	background-size: cover; 
 	position: relative;
@@ -440,6 +441,13 @@ body.error .wrapper {
 		display: table-cell;
 		vertical-align: middle; 
 	}
+}
+
+.wow {
+	-webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 
 
