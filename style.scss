@@ -213,10 +213,11 @@ nav {
 
 /*---------- header ----------*/
 header {
-	animation-delay: 1s;
 	background: url(/images/backgrounds/banner.jpg) center top;
 	background-size: cover;
 	background-attachment: fixed;
+
+	* {animation-delay: 2s;}
 
 	.layout {
 		padding-top: 40px;
