@@ -1,4 +1,7 @@
-<script src="{{ site.baseurl }}/js/uitop/jquery.ui.totop.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script src="{{ site.baseurl }}/js/jquery.enllax.min.js"></script>
+		<script src="{{ site.baseurl }}/js/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script src="{{ site.baseurl }}/js/uitop/jquery.ui.totop.min.js"></script>
 		<script src="{{ site.baseurl }}/js/uitop/easing.js"></script> 
 		<script src="{{ site.baseurl }}/js/animate/wow.min.js"></script>	 	
 
@@ -29,7 +32,7 @@
 		    $().UItoTop({ easingType: 'easeOutQuart' });
 
 			//paralax
-	    	//$(window).enllax();
+	    	$(window).enllax();
 
 	    	//magnific popup
 			$('.mgf-contact').magnificPopup({type:'image'});		
