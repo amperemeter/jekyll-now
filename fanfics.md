@@ -4,7 +4,7 @@ title: Фанфики
 permalink: /fanfics.html
 ---
 
-<div>[Aaron Taylor-Johnson](https://ficbook.net/fanfiction/rpf/aaron_taylor_johnson/) - Аарон Тейлор-Джонсон/МЖ</div>
+[Aaron Taylor-Johnson](https://ficbook.net/fanfiction/rpf/aaron_taylor_johnson/) - Аарон Тейлор-Джонсон/МЖ
 
 [Anastasija Sivaeva](https://ficbook.net/fanfiction/rpf/anastasija_sivaeva/) - Анастасия Сиваева/М
 
