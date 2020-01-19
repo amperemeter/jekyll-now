@@ -1,4 +1,5 @@
 ---
+layout: 404.html
 title: Фанфики
 permalink: /fanfics.html
 ---
