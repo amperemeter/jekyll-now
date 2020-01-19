@@ -1,9 +1,9 @@
 ---
-layout: 404
-title: 404 - Страница не найдена
-permalink: /fanfics.html
+layout: default
+title: Фанфики
+permalink: /fanfics
 ---
 
-[Aaron Taylor-Johnson]({{ site.baseurl }}/) - Аарон Тейлор-Джонсон/МЖ
-[Anastasija Sivaeva]({{ site.baseurl }}/) - Анастасия Сиваева/М
-[Anya Taylor-Joy]({{ site.baseurl }}/) - Аня Тейлор-Джой/Джеймс МакЭвой
+<div>[Aaron Taylor-Johnson](https://ficbook.net/fanfiction/rpf/aaron_taylor_johnson) - Аарон Тейлор-Джонсон/МЖ</div>
+<div>[Anastasija Sivaeva](https://ficbook.net/fanfiction/rpf/anastasija_sivaeva) - Анастасия Сиваева/М</div>
+<div>[Anya Taylor-Joy](https://ficbook.net/fanfiction/rpf/anastasija_sivaeva) - Аня Тейлор-Джой/Джеймс МакЭвой</div>
