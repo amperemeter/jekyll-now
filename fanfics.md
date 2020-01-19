@@ -1,7 +1,7 @@
 ---
-layout: 404
+layout: page
 title: Фанфики
-permalink: /fanfics
+permalink: /fanfics.html
 ---
 
 [Aaron Taylor-Johnson](https://ficbook.net/fanfiction/rpf/aaron_taylor_johnson/) - Аарон Тейлор-Джонсон/МЖ
