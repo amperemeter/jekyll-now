@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Фанфики
 permalink: /fanfics.html
 ---
