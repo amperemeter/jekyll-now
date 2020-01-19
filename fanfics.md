@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Фанфики
-permalink: /fanfics
+permalink: /fanfics.html
 ---
 
 <div>[Aaron Taylor-Johnson](https://ficbook.net/fanfiction/rpf/aaron_taylor_johnson) - Аарон Тейлор-Джонсон/МЖ</div>
